@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission form</title>
+</head>
+<body>
+    <h1>Admission form</h1> 
+    <br/>
+    <hr/>
+    <br/>
+    <form>
+        <label for="name">student Name:</label>
+        <input type="text"id="name"/>
+        <br/>
+        <br/>
+        <label for="DOB">Date of Birth:</label>
+        <input type="date"/>
+        <br/>
+        <br/>
+        <label for=" phone no.">contact number:</label>
+        <input type="tel"/>
+        <br/>
+        <br/>
+        <label for="email">Email:</label>
+        <input type="email"/>
+        <br/>
+        <hr>
+
+        <!-- option value -->
+        <label for="">select state</label>
+        <select>
+            <option>Bihar</option>
+            <option>UP</option>
+            <option>Mp</option>
+            <option>Goa</option>
+        </select>
+        <br>
+        <br>
+        <label for="">Select Boards</label>
+        <input type="text" list="Boards"/>
+        <datalist id="Boards">
+            <option> CBSE</option>
+            <option>ICSE</option>
+            <option>Up Board</option>
+        </datalist> 
+    </form>
+
+</body>
+</html>

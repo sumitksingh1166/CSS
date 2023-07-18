@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <!-- use for styling -->
+    <style>
+        *flex{
+            
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .mypage{
+            height: 100%;
+            width: 25%;
+            border-radius: 10px;
+            /* background-color: seashell; */
+            box-shadow: 2px 3px 5px 2px;
+            padding: 50px;
+            backdrop-filter: #eee;
+        }
+        body{
+            justify-content: right;
+            background-color: bisque;
+            display: flex;
+            margin: 5%;
+            align-items: center;
+            background-image: url(https://wallpaperaccess.com/full/2497911.jpg);
+            backdrop-filter: blur(5px);
+        }
+
+        .myinput{
+            display: block;
+
+            width: 90%;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            padding: 10px 10px;
+            border-radius: 5px;
+            border: none;
+            border-bottom: 2px solid black;
+            font-size: medium;
+            border-radius: 20px;
+            background-color: #eee;
+            border: none;
+
+        }   
+        
+        .mybtn{
+            width: 85%;
+            padding: 10px 10px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            margin-left: 20px;
+            border: none;
+            border-radius: 5px;
+            transition-property: all;
+            transition-duration: 300ms;
+            color: white;
+            background-color: skyblue;
+        }
+        .mybtn:hover{
+            transform: scale(1.1) translateY(5px);
+            box-shadow: 0px -10px 10px -5px;
+        }
+        form{
+            margin-top: 50px;
+        }
+        .media{
+            font-size: 40px;
+            font-weight: bold;
+            letter-spacing: 4px;
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="mypage">
+        <h2 style="text-align: center;">One Click to go</h2>
+        
+        <p class="media">Thread</p>
+        <form>
+            <label for="name" type="text">First Name</label>
+            <input class="myinput" type="text">
+            <br>
+            
+            <label for="name" type="text">  Last Name</label>
+            <input class="myinput" type="text">
+            <br>
+            
+            <label for="Email" type="text">Email</label>
+            <input class="myinput" type="text">
+            <br>
+            
+            <label for="password" type="text">Creating password</label>
+            <input class="myinput" type="text">
+            <br>
+            
+            <label for="confirm password" type="text">Confirm password</label>
+            <input class="myinput" type="text">
+            <br>
+            
+            <input  type="checkbox" type="text">
+            <label for="text">I accept the <u>Terms of Services</u> and privacy policy</label><br>
+            <br>
+            <button class="mybtn" >Sign Up</button>
+            <p style="text-align: center;">Already registerd?<u><a style="color: azure;" href="https://www.bing.com/search?q=amazon&form=ANNNB1&refig=dc002f15db4b4e2fbe920dde300276a8&sp=1&lq=0&filters=ufn%3A%22Amazon+%28company%29%22+sid%3A%22ce00286a-e903-ff2c-7dac-b49bd707399c%22&asbe=HS&qs=MB&pq=amazo&sc=10-5&cvid=dc002f15db4b4e2fbe920dde300276a8">Sign in </a> </u></p>
+    
+
+        </form>
+    </div>
+</body>
+</html>

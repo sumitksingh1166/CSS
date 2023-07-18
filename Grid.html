@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using CSS Grids</title>
+
+    <style>
+        
+        :root{
+            --theme-background:#f2d2ff;
+            --theme-text :skyblue;
+        }
+        .child{
+            border: 3px solid crimson;
+            background-color: #ffc5bb;
+            padding: 20px;
+            background-color: var(--theme-background);
+            /* color: var(--theme-text) ; */
+            animation: myanimation 2s linear infinite;
+        }
+        .container{
+            display: grid;
+            /* grid-template-columns: 300px 400px  600px;   */
+            /* grid-template-columns: 4fr 2fr 3fr;   */
+             /* grid-template-columns: 1fr 1fr 1fr; */ 
+            grid-template-columns: repeat(4,1fr);   
+            /* grid-template-rows: repeat(2,300px); */
+                gap:20px;   
+            /* column-gap: 20px; */
+            /* row-gap: 20px;   */
+            background-color: darkgreen; 
+            height: 100vh; 
+            height: calc(100vh-106px); 
+        }
+
+        body{
+            background-color: var(--theme-background);
+            margin: 0;
+        }
+        .navbar{
+            background-color: var(--theme-background);
+            border: 3px solid var(--theme-text);
+            height: 100px;
+        }
+
+        @keyframes myanimation {
+            0%{
+                transform: translateY(-50px);
+            }
+
+            50%{
+                transform: translateY(50px);
+            }
+
+            100%{
+                transform: translateY(-50px);
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+
+    </nav>
+    <div class="container">
+        <div class="child">
+        <h1>Child 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore iusto doloremque iure nulla quae optio, eos amet. Quibusdam autem in atque laboriosam distinctio ab quas dolor rem et, impedit expedita?</p>
+        </div>
+        <div class="child">
+            <h1>Child 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aspernatur quos delectus, odit dolor sint quae eaque </p>
+            </div>
+            <div class="child">
+                <h1>Child 3</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum repellat ut, id perferendis eos delectus odit voluptate tempora dolorum fugiat commodi voluptatum explicabo molestias atque nisi nihil illo molestiae harum.</p>
+
+                </div>
+                <div class="child">
+                    <h1>Child 4</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quae pariatur minima a enim exercitationem veritatis est. Error, minima facere quos nisi eaque, nulla quas dignissimos nemo incidunt porro atque.</p>
+                    
+                </div>
+                    <div class="child">
+                        <h1>Child 5</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum neque accusantium tempora animi unde qui nihil fugiat earum omnis aperiam dolore consectetur assumenda dolorum!</p>
+                        </div>
+                        <div class="child">
+                            <h1>Child 6</h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, unde.</p>
+                        </div>
+            </div>
+    </div>
+</body>
+</html>
